@@ -14,7 +14,7 @@ body {
 }
 .search-box {
   border: 1px solid rgb(3, 118, 211);
-  width: 281px;
+  width: 276px;
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
@@ -25,6 +25,11 @@ body {
   border-radius: 25px;
   margin-left: 20px;
 }
+
+.product-list{
+  margin-top: 40px;
+}
+
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
