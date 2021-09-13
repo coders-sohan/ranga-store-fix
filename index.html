@@ -2,44 +2,44 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FakeStore</title>
-  <link rel="stylesheet" href="./css/style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranga Store</title>
+  <link rel="stylesheet" href="./css/style.css">
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
   <!-- google Montserrat  font  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header></header>
-  <main class="main">
+  <header>
+    <h1 class="display-5 text-center py-3 bg-info text-white">Ranga Store</h1>
+  </header>
+  <main class="main container">
     <div class="search-field">
-      <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
+      <div class="search-box d-flex  justify-content-center align-items-center">
+        <input id="input-field" class="search-input form-control" type="text">
         <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
           autocomplete="off" id="search-btn" onclick="loadProducts()">
           Search
         </button>
       </div>
     </div>
-    <div class="row product-list">
+    <div class="row mt-5">
       <div class="col-md-9 col-lg-9 col-sm-7">
-        <div id="all-products" class="">
-          <!-- <h1></h1> -->
+        <div id="all-products">
         </div>
       </div>
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
-        <div class="cart" id="my-cart">
+        <div class="cart bg-info" id="my-cart">
           <table class="table">
             <thead>
-              <h1>My-Cart</h1>
+              <h1 class="text-white">My-Cart</h1>
               <tr>
                 <th scope="col"></th>
                 <th scope="col"></th>
@@ -49,33 +49,33 @@
             </thead>
             <tbody>
               <tr>
-                <th>Total Added-Products:</th>
-                <td>$ <span id="total-Products">0</span></td>
-                <td></td>
-                <td></td>
+                <th class="text-white">Total Added-Products:</th>
+                <td class="text-white">$ <span id="total-Products">0</span></td>
+                <td class="text-white"></td>
+                <td class="text-white"></td>
               </tr>
               <tr>
-                <th>Price:</th>
-                <td>$ <span id="price">0</span></td>
-                <td></td>
-                <td></td>
+                <th class="text-white">Price:</th>
+                <td class="text-white">$ <span id="price">0</span></td>
+                <td class="text-white"></td>
+                <td class="text-white"></td>
               </tr>
               <tr>
-                <th>Delivery-Charge:</th>
-                <td>$ <span id="delivery-charge">20</span></td>
-                <td></td>
-                <td></td>
+                <th class="text-white">Delivery-Charge:</th>
+                <td class="text-white">$ <span id="delivery-charge">20</span></td>
+                <td class="text-white"></td>
+                <td class="text-white"></td>
               </tr>
               <tr>
-                <th>Total-Tax:</th>
-                <td>$ <span id="total-tax">0</span></td>
-                <td></td>
-                <td></td>
+                <th class="text-white">Total-Tax:</th>
+                <td class="text-white">$ <span id="total-tax">0</span></td>
+                <td class="text-white"></td>
+                <td class="text-white"></td>
               </tr>
               <tr>
-                <th scope="row">Total</th>
-                <td colspan="2">$ <span id="total">0</span></td>
-                <td></td>
+                <th class="text-white" scope="row">Total</th>
+                <td class="text-white" colspan="2">$ <span id="total">0</span></td>
+                <td class="text-white"></td>
               </tr>
             </tbody>
           </table>
