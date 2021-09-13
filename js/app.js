@@ -19,10 +19,10 @@ const showProducts = (products) => {
         <img class="product-image" src=${image}></img>
       </div>
       <div class="card-body">
-        <h5 class="card-title">${product.title}</h5>
-        <p class="card-text mt-3"><b>Category:</b> ${product.category}</p>
+        <h5 class="card-title text-primary">${product.title}</h5>
+        <p class="card-text mt-3"><b>Category:</b> <span class="text-danger"><b>${product.category}</b></span></p>
         <p class="card-text"><b>Rating:</b> <span class="text-warning mx-1"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span> (${product.rating.rate})</p>
-        <p class="card-title"><b>Review:</b> ${product.rating.count}</p>
+        <p class="card-title"><b>Review:</b> <b class="text-success">${product.rating.count}</b></p>
         <h3 class="card-title"><b>Price:</b> $ ${product.price}</h3>
       </div>
       <div class="card-footer border-0 blue-bg">
