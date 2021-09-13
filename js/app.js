@@ -21,7 +21,8 @@ const showProducts = (products) => {
       <div class="card-body">
         <h5 class="card-title">${product.title}</h5>
         <p class="card-text mt-3"><b>Category:</b> ${product.category}</p>
-        <p class="card-text">Rating: <span class="text-warning mx-1"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span> ${product.rating.rate} (${product.rating.count})</p>
+        <p class="card-text">Rating: <span class="text-warning mx-1"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span> ${product.rating.rate}</p>
+        <p class="card-title"><b>Review:</b> ${product.rating.count}</p>
         <h3 class="card-title"><b>Price:</b> $ ${product.price}</h3>
       </div>
       <div class="card-footer border-0 blue-bg">
